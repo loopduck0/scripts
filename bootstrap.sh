@@ -10,3 +10,8 @@ sudo apt install gh
 # Clone loopduck0/scripts
 gh auth login  # https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token#creating-a-token
 gh repo clone loopduck0/scripts
+
+# Setup git configs
+git config --global user.email "loopduck0@gmail.com"
+git config --global user.name "loopduck0"
+git config --global core.editor vim
