@@ -7,12 +7,11 @@ input=$1
 config_file=$2
 
 # Write file
-if [ -f "$config_file" ]; then
-    echo "Overwriting $config_file..."
+#if [ -f "$config_file" ]; then
     # echo "WARNING: $config_file already exists. Would you like to overwrite this file? (Y/n)" 
-fi
+#fi
 
-cp -f $input $config_file
+cp -vb $input $config_file
 chmod a+x $config_file
 
 # Add to bashrc
